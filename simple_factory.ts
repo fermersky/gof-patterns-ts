@@ -98,7 +98,7 @@ class DBSessionBuilder {
   }
 }
 
-const connection = DBSessionBuilder.createSession({
+const config: ICreateSessionConfig = {
   engine: "postgres",
   postgres: {
     host: "127.0.0.1",
@@ -107,5 +107,7 @@ const connection = DBSessionBuilder.createSession({
     user: "root",
     port: 5432,
   },
-});
+};
+
+const connection = DBSessionBuilder.createSession(config);
 connection.connect();
