@@ -9,9 +9,9 @@ skeleton of an algorithm in an operation, deferring some steps to subclasses. It
 of an algorithm without changing the algorithm's structure.
 `;
 
-import * as fs from "node:fs";
-import * as assert from "node:assert";
-import * as path from "node:path";
+import fs from "node:fs";
+import assert from "node:assert";
+import path from "node:path";
 
 interface IReportBuilderConfig {
   title: string;
